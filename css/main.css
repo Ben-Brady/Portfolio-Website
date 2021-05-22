@@ -7,7 +7,9 @@
         --CS: #0z02bb9;
     }
 
-    .Link {
+    #EmailLink,
+    #DocLink,
+    #GithubLink {
         filter: invert(100%);
     }
 }
