@@ -1,10 +1,7 @@
 @media (prefers-color-scheme: light) {
     :root {
-        --Background: #90a19e;
-        --Text: black;
-
-        --PY: #eeff00;
-        --CS: #0z02bb9;
+        --Background: #888;
+        --Text: #000000;
     }
 
     #EmailLink,
@@ -16,12 +13,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --Text: #fff;
         --Background: #000;
-        --Text: #dee7e9;
-
-        --PY: #eeff00;
-        --CS: #003cff;
     }
+}
+
+:root {
+    --PY: #eeff00;
+    --CS: #004cbd;
 }
 
 html {
@@ -48,7 +47,7 @@ h2 {
 }
 
 .Border {
-    border: 5px solid var(--Text);
+    border: 5px solid #ffffff;
     border-radius: 20px;
     padding: 10px;
 }

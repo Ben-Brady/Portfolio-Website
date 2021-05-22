@@ -24,7 +24,7 @@ async function PopupCopy() {
     var Popup = document.getElementById("Popup")
     var PopupText = document.getElementById("PopupText")
 
-    CopyTextToClipboard(PopupText.innerHTML)
+    CopyToClipboard(PopupText.innerHTML)
     PopupText.innerHTML = "Copied to Clipboard!"
     Popup.style.opacity = "0"
 }
@@ -53,19 +53,4 @@ function CopyToClipboard(text) {
     }
 
     document.body.removeChild(textArea);
-}
-
-function copyTextToClipboard(text) {
-    if (!navigator.clipboard) {
-        CopyToClipboard(text);
-        return;
-    }
-    navigator.clipboard.writeText(text).then(
-        function () {
-            console.log("Async: Copying to clipboard was successful!");
-        },
-        function (err) {
-            console.error("Async: Could not copy text: ", err);
-        },
-    );
 }
