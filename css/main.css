@@ -47,7 +47,7 @@ h2 {
 }
 
 .Border {
-    border: 5px solid var(--Text);
+    border: 5px solid #fff;
     border-radius: 20px;
     padding: 10px;
 }
