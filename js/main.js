@@ -24,11 +24,7 @@ async function PopupCopy() {
     var Popup = document.getElementById("Popup")
     var PopupText = document.getElementById("PopupText")
 
-    if (navigator.clipboard) {
-        navigator.clipboard.writeText(PopupText.innerHTML)
-    } else {
-        CopyToClipboard(PopupText.innerHTML)
-    }
+    CopyTextToClipboard(PopupText.innerHTML)
     PopupText.innerHTML = "Copied to Clipboard!"
     Popup.style.opacity = "0"
 }
@@ -58,6 +54,7 @@ function CopyToClipboard(text) {
 
     document.body.removeChild(textArea);
 }
+
 function copyTextToClipboard(text) {
     if (!navigator.clipboard) {
         CopyToClipboard(text);
@@ -72,12 +69,3 @@ function copyTextToClipboard(text) {
         },
     );
 }
-
-
-copyBobBtn.addEventListener("click", function (event) {
-    copyTextToClipboard("Bob");
-});
-
-copyJaneBtn.addEventListener("click", function (event) {
-    copyTextToClipboard("Jane");
-});
