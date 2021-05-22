@@ -1,0 +1,117 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --Background: #90a19e;
+        --Text: black;
+
+        --PY: #eeff00;
+        --CS: #002bb9;
+    }
+
+    .Link {
+        filter: invert(100%);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Background: #000;
+        --Text: #dee7e9;
+
+        --PY: #eeff00;
+        --CS: #003cff;
+    }
+}
+
+html {
+    overflow: hidden;
+    background-color: var(--Background);
+}
+
+a,
+h1,
+h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    color: var(--Text);
+    font-weight: 1000;
+    text-align: center;
+    user-select: none;
+}
+
+h1 {
+    font-size: calc(1vw + 22px);
+}
+
+h2 {
+    font-size: calc(1vw + 10px);
+}
+
+.Border {
+    border: 5px solid var(--Text);
+    border-radius: 20px;
+    border-left: 1px;
+    border-right: 1px;
+    padding: 10px;
+}
+
+#PopupText {
+    font-size: 3vw;
+    text-decoration: underline;
+
+    user-select: none;
+    cursor: pointer;
+
+    max-width: 80%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#Popup {
+    opacity: 0;
+    transition: 400ms;
+    transition-delay: 400ms;
+    z-index: 1;
+
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Python:hover,
+#Cs:hover {
+    cursor: pointer;
+    filter: opacity(90%);
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+#Python {
+    color: var(--PY);
+}
+
+#Cs {
+    color: var(--CS);
+}
+
+#Links {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: auto;
+    z-index: 2;
+}
+
+#EmailLink,
+#GithubLink {
+    cursor: pointer;
+    height: calc(40px + 3vw);
+}
+
+#EmailLink {
+    border-radius: 25px;
+}
+
+#GithubLink {
+    border-radius: 100px;
+}
