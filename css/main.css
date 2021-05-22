@@ -4,7 +4,7 @@
         --Text: black;
 
         --PY: #eeff00;
-        --CS: #002bb9;
+        --CS: #0z02bb9;
     }
 
     .Link {
@@ -48,8 +48,6 @@ h2 {
 .Border {
     border: 5px solid var(--Text);
     border-radius: 20px;
-    border-left: 1px;
-    border-right: 1px;
     padding: 10px;
 }
 
@@ -63,6 +61,11 @@ h2 {
     max-width: 80%;
     text-align: center;
     overflow-x: hidden;
+
+    padding: 10px;
+
+    border: 7px solid var(--Text);
+    border-radius: 20px;
 }
 
 #Popup {
@@ -76,13 +79,13 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-#Python:hover,
-#Cs:hover {
+#Python:hover {
     cursor: pointer;
     filter: opacity(90%);
-    font-size: 1.1em;
+    font-size: 1.02em;
     font-weight: lighter;
 }
 
@@ -103,6 +106,7 @@ h2 {
 }
 
 #EmailLink,
+#DocLink,
 #GithubLink {
     cursor: pointer;
     height: calc(40px + 3vw);
@@ -114,4 +118,8 @@ h2 {
 
 #GithubLink {
     border-radius: 100px;
+}
+
+#DocLink {
+    border-radius: 20px;
 }

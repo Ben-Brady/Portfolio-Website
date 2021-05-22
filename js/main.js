@@ -3,34 +3,34 @@ Email = "benbradybusiness@gmail.com";
 requestAnimationFrame(UpdateAge);
 
 function UpdateAge(timestamp) {
-    var Years = Date.now() / 31536000000 - 34.5912616929044;
-    Numbers = Years.toString() + "000000000";
-    document.getElementById("Age").innerHTML = Numbers.slice(0, 12);
-    requestAnimationFrame(UpdateAge);
+    var Years = Date.now() / 31536000000 - 34.5912616929044
+    Numbers = Years.toString() + "000000000"
+    document.getElementById("Age").innerHTML = Numbers.slice(0, 12)
+    requestAnimationFrame(UpdateAge)
 }
 
 function Popup(Text) {
-    var Popup = document.getElementsByClassName("Popup")[0];
-    var PopupText = document.getElementsByClassName("PopupText")[0];
-    PopupText.innerHTML = Text;
-    Popup.style.opacity = "1";
+    var Popup = document.getElementById("Popup")
+    var PopupText = document.getElementById("PopupText")
+    PopupText.innerHTML = Text
+    Popup.style.opacity = "1"
 
     setTimeout(function () {
-        Popup.style.opacity = "0";
-    }, 3000);
+        Popup.style.opacity = "0"
+    }, 3000)
 }
 
 async function PopupCopy() {
-    var Popup = document.getElementsByClassName("Popup")[0];
-    var PopupText = document.getElementsByClassName("PopupText")[0];
+    var Popup = document.getElementById("Popup")
+    var PopupText = document.getElementById("PopupText")
 
     if (navigator.clipboard) {
-        navigator.clipboard.writeText(PopupText.innerHTML);
+        navigator.clipboard.writeText(PopupText.innerHTML)
     } else {
-        CopyToClipboard(PopupText.innerHTML);
+        CopyToClipboard(PopupText.innerHTML)
     }
-    PopupText.innerHTML = "Text Copied!";
-    Popup.style.opacity = "0";
+    PopupText.innerHTML = "Copied to Clipboard!"
+    Popup.style.opacity = "0"
 }
 
 /* ------- Other People's Code ------ */
