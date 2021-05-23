@@ -14,10 +14,7 @@
 /* @media (prefers-color-scheme: dark) {} */
 :root {
     --Text: #fff;
-    --Background: #000;
-}
-
-:root {
+    --Background: #000;.
     --PY: #eeff00;
     --CS: #004cbd;
 }
