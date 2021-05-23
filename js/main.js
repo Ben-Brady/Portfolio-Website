@@ -1,22 +1,27 @@
 Email = "benbradybusiness@gmail.com";
+PopupID = 0
 
 requestAnimationFrame(UpdateAge);
 
-function UpdateAge(timestamp) {
+async function UpdateAge(timestamp) {
     var Years = Date.now() / 31536000000 - 34.5912616929044
     Numbers = Years.toString() + "000000000"
     document.getElementById("Age").innerHTML = Numbers.slice(0, 12)
     requestAnimationFrame(UpdateAge)
 }
 
-function Popup(Text) {
+async function Popup(Text) {
     var Popup = document.getElementById("Popup")
     var PopupText = document.getElementById("PopupText")
     PopupText.innerHTML = Text
     Popup.style.opacity = "1"
+    PopupID = Math.random()
+    var LocalID = 
 
     setTimeout(function () {
-        Popup.style.opacity = "0"
+        if (LocalID === PopupID){
+            Popup.style.opacity = "0"
+            }
     }, 3000)
 }
 

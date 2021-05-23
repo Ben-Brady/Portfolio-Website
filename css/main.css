@@ -1,4 +1,4 @@
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         --Background: #888;
         --Text: #000000;
@@ -9,13 +9,12 @@
     #GithubLink {
         filter: invert(100%);
     }
-}
+} */
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --Text: #fff;
-        --Background: #000;
-    }
+/* @media (prefers-color-scheme: dark) {} */
+:root {
+    --Text: #fff;
+    --Background: #000;
 }
 
 :root {
@@ -110,6 +109,7 @@ h2 {
 #GithubLink {
     cursor: pointer;
     height: calc(40px + 3vw);
+    width: auto;
 }
 
 #EmailLink {
