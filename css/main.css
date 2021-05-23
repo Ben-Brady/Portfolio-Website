@@ -28,8 +28,9 @@ a,
 h1,
 h2 {
     font-family: "Noto Sans JP", sans-serif;
-    color: var(--Text);
     font-weight: 700;
+    color: var(--Text);
+
     text-align: center;
     user-select: none;
 }
@@ -109,14 +110,14 @@ h2 {
     width: auto;
 }
 
-#EmailLink {
-    border-radius: 25px;
-}
-
 #GithubLink {
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 #DocLink {
-    border-radius: 20px;
+    border-radius: 15%;
+}
+
+#EmailLink {
+    border-radius: 15%;
 }

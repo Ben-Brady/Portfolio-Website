@@ -1,8 +1,6 @@
 Email = "benbradybusiness@gmail.com";
 PopupID = 0
 
-requestAnimationFrame(UpdateAge);
-
 async function UpdateAge(timestamp) {
     var Years = Date.now() / 31536000000 - 34.5912616929044
     Numbers = Years.toString() + "000000000"
