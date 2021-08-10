@@ -1,376 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<title>Curriculum Vitae</title>
-	<meta name="description" content="My personal programming portfolio, if you read it could you please hire me.">
-	<meta name="keywords" content="Portfolio,Github,Developer">
-	<meta name="author" content="Ben Brady">
-	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Ben Brady - Programmer</title>
+    <link type="text/css" rel="stylesheet" href="css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><title>Curriculum Vitae</title>
+<link href="http://github.com/yrgoldteeth/darkdowncss/raw/master/darkdown.css" rel="stylesheet"></link> 
 
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
-
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
-}
-
-</style>
-
-<style>
-/*
-Monokai style - ported by Luigi Maselli - http://grigio.org
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #272822;
-  color: #ddd;
-}
-
-.hljs-tag,
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-strong,
-.hljs-name {
-  color: #f92672;
-}
-
-.hljs-code {
-  color: #66d9ef;
-}
-
-.hljs-class .hljs-title {
-  color: white;
-}
-
-.hljs-attribute,
-.hljs-symbol,
-.hljs-regexp,
-.hljs-link {
-  color: #bf79db;
-}
-
-.hljs-string,
-.hljs-bullet,
-.hljs-subst,
-.hljs-title,
-.hljs-section,
-.hljs-emphasis,
-.hljs-type,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-selector-attr,
-.hljs-selector-pseudo,
-.hljs-addition,
-.hljs-variable,
-.hljs-template-tag,
-.hljs-template-variable {
-  color: #a6e22e;
-}
-
-.hljs-comment,
-.hljs-quote,
-.hljs-deletion,
-.hljs-meta {
-  color: #75715e;
-}
-
-.hljs-keyword,
-.hljs-selector-tag,
-.hljs-literal,
-.hljs-doctag,
-.hljs-title,
-.hljs-section,
-.hljs-type,
-.hljs-selector-id {
-  font-weight: bold;
-}
-
-</style>
-
-<style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
-}
-
-</style>
-<link rel="stylesheet" href="css/cv.css" type="text/css">
-<script src=""></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<title>Curriculum Vitae</title>
-<h1 id="ben-brady---programmer">Ben Brady - Programmer</h1>
-<h2 id="qualification">Qualification</h2>
-<h3 id="gillingham-school--2015---2020">Gillingham School | 2015 - 2020</h3>
+<h1 id="ben-brady---programmer"><a class="header-link" href="#ben-brady---programmer"></a>Ben Brady - Programmer</h1>
+<h2 id="education"><a class="header-link" href="#education"></a>Education</h2>
+<h3 id="2020--present--wiltshire-college"><a class="header-link" href="#2020--present--wiltshire-college"></a>2020 – Present | Wiltshire College</h3>
 <table>
 <thead>
 <tr>
@@ -379,8 +23,22 @@ code {
 <th>Qualification</th>
 </tr>
 </thead>
-<tbody>
+<tbody><tr>
+<td>BTEC</td>
+<td>Information Technology(Level 3)</td>
+<td>Year 1 - Merit<br>Year 2 - TBD</td>
+</tr>
+</tbody></table>
+<h3 id="2015---2020--gillingham-school"><a class="header-link" href="#2015---2020--gillingham-school"></a>2015 - 2020 | Gillingham School</h3>
+<table>
+<thead>
 <tr>
+<th>Board</th>
+<th>Subject</th>
+<th>Qualification</th>
+</tr>
+</thead>
+<tbody><tr>
 <td>GCSE</td>
 <td>Mathematics</td>
 <td>8</td>
@@ -430,41 +88,97 @@ code {
 <td>English Literature</td>
 <td>4</td>
 </tr>
-</tbody>
-</table>
-<h3 id="wiltshire-college--2020-%E2%80%93-present">Wiltshire College | 2020 – Present</h3>
+</tbody></table>
+<h2 id="experience"><a class="header-link" href="#experience"></a>Experience</h2>
+<h3 id="python"><a class="header-link" href="#python"></a>Python</h3>
+<p>Areas of Expertise:</p>
 <table>
 <thead>
 <tr>
-<th>Board</th>
 <th>Subject</th>
-<th>Qualification</th>
+<th>Level of Skill</th>
+<th>Description</th>
+<th>Example</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td>BTEC</td>
-<td>Information Technology</td>
-<td>Level 3 Foundation Diploma</td>
+<tbody><tr>
+<td>Discord Bots</td>
+<td>Expert</td>
+<td>I have a prominent level of skill on making discord chat bots, many of which can be found on my <a href="https://github.com/Ben-Brady">GitHub</a>.</td>
+<td><a href="https://github.com/Ben-Brady">PureImage</a></td>
 </tr>
-</tbody>
-</table>
-<h2 id="experience">Experience</h2>
-<h3 id="programming">Programming</h3>
-<h4 id="python--5-years">Python | 5 Years</h4>
-<ul>
-<li>Intermediate REST API</li>
+<tr>
+<td>Cryptography</td>
+<td>Adept</td>
+<td>I have knowledge of both Asymmetric(RSA) and symmetric(AES) encryption, as well as the advantages and disadvantages of different hashing algorithms.</td>
+<td></td>
+</tr>
+<tr>
+<td>API Interaction</td>
+<td>Intermediate</td>
+<td>I have experience with using with both Token and Session based authentication. Additionally, I have worked well with API technologies such as JSON and GraphQL.</td>
+<td><a href="https://github.com/Ben-Brady/Ethermonitor">EtherMonitor</a></td>
+</tr>
+<tr>
+<td>Web Hosting</td>
+<td>Beginner</td>
+<td>I have a basic level of experience in the flask web framework as well as the expanded html syntax it allows.</td>
+<td><a href="https://github.com/Ben-Brady/PortfolioServer">Portfolio</a></td>
+</tr>
+</tbody></table>
+<p>Notable Projects:</p>
+<ul class="list">
+<li><a href="https://github.com/Ben-Brady/PureImage">PureImage</a></li>
+<li><a href="https://github.com/Ben-Brady/PrinterLog">PrinterLog</a></li>
+<li><a href="https://github.com/Ben-Brady/Portfolio">Portfolio</a></li>
 </ul>
-<h2 id="awards">Awards</h2>
-<p>2018 - Dorset Award for Young People</p>
-<h2 id="contact">Contact</h2>
-<h3 id="business-email">Business Email</h3>
-<pre><code>benbradybusiness@gmail.com
-</code></pre>
-<h3 id="discord">Discord</h3>
-<pre><code>That_Gay_Kid#4288
-</code></pre>
-<p><a href="cv.md">Markdown Source Code</a></p>
+<h3 id="other-languages"><a class="header-link" href="#other-languages"></a>Other Languages</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Level of Skill</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C#</td>
+<td>Beginner</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>HTML/CSS/JS</td>
+<td>Beginner</td>
+<td><a href="https://hireme.contact">My Personal Website</a></td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Intermediate</td>
+<td><a href="https://github.com/Ben-Brady/PureImage">PureImage</a></td>
+</tr>
+</tbody></table>
+<h2 id="references"><a class="header-link" href="#references"></a>References</h2>
+<p>Business Email:</p>
+<blockquote>
+<p><a href="mailto:&#x62;&#101;&#110;&#x62;&#x72;&#97;&#x64;&#x79;&#98;&#117;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">&#x62;&#101;&#110;&#x62;&#x72;&#97;&#x64;&#x79;&#98;&#117;&#115;&#x69;&#110;&#x65;&#115;&#x73;&#64;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;</a></p>
+</blockquote>
+<p>Github:</p>
+<blockquote>
+<p><a href="https://github.com/Ben-Brady">https://github.com/Ben-Brady</a></p>
+</blockquote>
+<p>Wiltshire College:</p>
+<blockquote>
+<p><a href="https://wiltshire.ac.uk/about/contact-us">https://wiltshire.ac.uk/about/contact-us</a></p>
+</blockquote>
+<p>Gillingham School:</p>
+<pre class="hljs"><code>office@gillingham-dorset<span class="hljs-selector-class">.co</span><span class="hljs-selector-class">.uk</span>
++<span class="hljs-number">44</span>(<span class="hljs-number">0</span>)<span class="hljs-number">1747</span> <span class="hljs-number">822222</span>
 
-</body>
+Gillingham School
+Hardings Lane
+Gillingham
+Dorset
+SP8 <span class="hljs-number">4</span>QP</code></pre><p>vs</p>
+    </article>
+  </body>
 </html>
